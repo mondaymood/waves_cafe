@@ -1,20 +1,104 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
 
-    </head>
+<!---- This is the head (external rescources & metadata) ---->
+
+<head>
+    
+    <title>Waves Café</title>
+
+    <!---- This is the grid stylesheet ---->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css" />
+
+    <!---- This is the google fonts (Raleway 200, 400, 600) ---->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;600&display=swap" rel="stylesheet">
+
+    <!---- These are our icons (Font Awesome) ---->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!---- This is the css stylesheet (last) ---->
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<!---- This is the body (page content) ---->
+
 <body>
-    <!------------------- Header ------------------->
-    <header>
-    </header>
+    <!-------------- This is the header -------------->
+    <header class="bg-blue white padded grid text-center tall-90">
+        <div class="header-nav col-12 grid">
+            <div class="col-4 text-left">
+               <a href="/index.html" class="logo">
+                <h2>Waves Café</h2>
+               </a>
+            </div>
+            <nav class="col-8 text-right">
+             <a href="/index.html">Home</a>
+             <a href="/menu.html">Menu</a>
+             <a href="/info.html">Info</a>
+          </nav>
+        </div>
+ 
+         <div class="col-12-middle">
+         <h3 class="bold-weight editable">
+             <span class="highlight">Sleep</span> like a puppy
+         </h3>
+         <h1 class="normal-weight editable">The ultimate matress solution</h1>
+         </div>
+     </header>
 
-    <!------------------- Header Section  ------------------->
-    <section>
+    <!-------------- This is a banner -------------->
+    <section class="padded text-center">
+        <div>
+            <div class="big-button"><a href="/menu.html">Menu</a></div>
+        </div>
     </section>
 
-    <!------------------- Header Section  ------------------->
-    <footer>
+    <!-------------- This is a gallery -------------->
+    <section class="grid tall-60 ">
+        <div class="bg-woman col-4">   
+            <!---- Background image bed ---->
+        </div>  
+        <div class="bg-coffee col-4">   
+            <!---- Background image bed ---->
+        </div>  
+        <div class="bg-table col-4">   
+            <!---- Background image bed ---->
+        </div>  
+    </section>
+
+    <!-------------- This is the story -------------->
+    <section class="padded text-center tall-50 grid-center">
+        <div class="col-6-middle">
+            <h3 class="big-text">Our story</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam doloremque explicabo cumque ipsam aliquid sint quaerat numquam laboriosam laborum. Necessitatibus, dolorem ipsum? Possimus distinctio minus, impedit itaque nulla atque consectetur.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam doloremque explicabo cumque ipsam aliquid sint quaerat numquam laboriosam laborum. Necessitatibus, dolorem ipsum? Possimus distinctio minus, impedit itaque nulla atque consectetur.</p>
+        </div>
+    </section>    
+
+    <!-------------- This is a banner -------------->
+    <section class="bg-blue padded text-center">
+        <div>
+            <div class="big-button-white"><a href="/menu.html">Make a reservation</a></div>
+        </div>
+    </section>
+
+    <!-------------- This is the footer -------------->
+    <footer class="padded white grid-spaceBetween bg-ocean">
+        <div class="col-5-bottom">
+            <h2>Let's connect</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima incidunt quibusdam rem. Adipisci rerum aliquid non quos quisquam, placeat fugiat laudantium id amet nemo exercitationem veritatis voluptatum dicta at nobis!</p>
+        </div>
+        <div class="col-4-bottom">
+            <p><strong>Call:</strong> <a href="tel:#">04555 5555</a></p>
+            <p><strong>Email</strong> <a href="mailto:#">hello@thesleep.co</a></p>
+            <p><strong>Store:</strong> 55 Main St, Chicago</p>
+            <p><strong>Instagram:</strong> <a href="https://www.instagram.com/thesleepco">@thesleepco</a></p>
+        </div>
     </footer>
+
 </body>
 </html>
