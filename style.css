@@ -18,10 +18,19 @@
     .padded        {padding: 5%;}
     .padded-s      {padding: 1rem;}
     .padded-l      {padding: 10%;}
+    .padded-menu   {padding: 0rem 7rem 10rem 7rem}
     
     .bg-blue {
         background-color: #006eff;
         color: white;
+    }
+
+    .bg-blue a{
+        color: #00aeff;
+    }
+
+    .bg-blue a:hover{
+        color:  white;
     }
     
     .tall-50        {min-height: 50vh;}
@@ -30,6 +39,10 @@
     .tall-80        {min-height: 80vh;}
     .tall-90        {min-height: 90vh;}
     .tall-100       {min-height: 100vh;}
+
+    [class*=grid] {
+        margin: 0;
+    }
     
     /* ----------- Typography styles ----------- */
     
@@ -96,7 +109,7 @@
 
     .light-weight   {font-weight: 200;}
     .normal-weight  {font-weight: normal;}
-    .bold-weight    {font-weight: 800;}
+    .bold-weight    {font-weight: 600;}
 
     /* ----------- Image styles ----------- */
    
@@ -135,10 +148,27 @@
         background-position: 50% 60%;
         background-size: cover;
     }
+
+    .bg-breakfast      {
+        background-image: url('https://source.unsplash.com/TkzdkVn1AyA');
+        background-position: 50% 75%;
+        background-size: cover;
+    }
+
+    .bg-lunch      {
+        background-image: url('https://source.unsplash.com/fdlZBWIP0aM');
+        background-position: 50% 50%;
+        background-size: cover;
+    }
     
     .bg-logo      {
         background-image: url('images/waves_logo.png');
         background-position: 50% 60%;
+        background-size: cover;
+    }
+
+    .bg-map {
+        background-image: url('images/waves_cafe_map.png');
         background-size: cover;
     }
 
@@ -150,8 +180,8 @@
         
     header h3 {
         font-size: 5.5rem;
-        text-transform: lowercase;
         line-height: 1.2;
+        font-weight: 400;
     }
 
     nav a {
@@ -236,3 +266,51 @@
         padding: 0.5rem 1rem;
         margin: 0rem 0.5em;
     }
+
+
+ /* ----------- Additional styles ----------- */
+
+ .banner {
+    margin: 0rem -4rem 7rem 0rem;
+    text-align: right;
+ }
+
+ .fa-long-arrow-alt-down {
+     font-size: 5rem;
+     padding-top: 3rem;
+ }
+
+form input, form textarea {
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border: 2px solid rgb(220, 220, 220);
+    outline: none;
+    font-family: inherit;
+    font-size: 0.9rem;
+  }
+  
+  form input:focus, form textarea:focus {
+    border-color: teal;
+  }
+  
+  textarea {
+    min-height: 10rem;
+  }
+  
+  form label {
+    margin-top: 1rem;
+    display: block;
+    color: #6C7A89;
+    font-weight: bold;
+  }
+  
+  form button {
+    background-color: #6C7A89;
+    color: white;
+    border: none;
+    padding: 0.5rem 2rem;
+    letterspacing: 0.1em;
+    margin: 0.5rem 0;
+  }
+  
