@@ -275,10 +275,12 @@
     text-align: right;
  }
 
- .fa-long-arrow-alt-down {
+ .fa-long-arrow-alt-down{
      font-size: 5rem;
      padding-top: 3rem;
+     color: white;
  }
+
 
 form input, form textarea {
     width: 100%;
