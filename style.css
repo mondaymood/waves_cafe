@@ -1,5 +1,5 @@
 /*  Colors
-    Blue: #002fff
+    Blue: #006eff
     Light blue: #00aeff */
 
     * {
@@ -11,8 +11,8 @@
     /* ----------- Universal styles ----------- */
     
     body {
-        font-family: 'Raleway', sans-serif;
-        color: #002fff;
+        font-family: 'Poppins', sans-serif;
+        color: #006eff;
     }
     
     .padded        {padding: 5%;}
@@ -20,7 +20,7 @@
     .padded-l      {padding: 10%;}
     
     .bg-blue {
-        background-color: #002fff;
+        background-color: #006eff;
         color: white;
     }
     
@@ -35,7 +35,7 @@
     
     h2, h3, h4, h5, h6 {
         margin-bottom: 1rem;
-        line-height: 1.1;
+        line-height: 1.4;
     }
       
     h2 {
@@ -54,7 +54,7 @@
     }
     
     a {
-        color: inherit;
+        color: #006eff;
         text-decoration: none;
     }
     
@@ -66,7 +66,7 @@
     .text-center    {text-align: center;}
     .text-right     {text-align: right;}
     
-    .highlight      {color: #00aeff;}
+    .highlight      {color: #006eff;}
     .white          {color: white;}
     
     .small-text     {font-size: 1.5rem;}
@@ -75,7 +75,12 @@
         font-size: 2rem;
         line-height: 1.5;
     }
-    .big-text       {font-size: 4.5rem;}
+    .big-text       {
+        font-size: 3.5rem;
+        text-transform: uppercase;
+        font-weight: 400;
+        letter-spacing: 0.05em;
+    }
     
     .subtitle       {
         font-size: 1.2rem;
@@ -101,6 +106,18 @@
         background-size: cover;
     }
 
+    .bg-light {
+        background-image: url('https://source.unsplash.com/YQD1Xljt4xo');
+        background-position: 50% 80%;
+        background-size: cover;
+        max-width: 100%;
+    }    
+
+    .bg-background {
+        background-image: url('images/waves_cafe_background.jpg');
+        background-size: cover;
+    }
+
     .bg-woman      {
         background-image: url('images/waves_cafe_woman.jpg');
         background-position: 50% 50%;
@@ -119,6 +136,12 @@
         background-size: cover;
     }
     
+    .bg-logo      {
+        background-image: url('images/waves_logo.png');
+        background-position: 50% 60%;
+        background-size: cover;
+    }
+
     .landscape {padding-bottom: 65%;}
     .portrait {padding-bottom: 125%;}
     .square {padding-bottom: 100%;}    
@@ -128,11 +151,17 @@
     header h3 {
         font-size: 5.5rem;
         text-transform: lowercase;
-        line-height: 1;
+        line-height: 1.2;
+    }
+
+    nav a {
+        font-size: 1.5rem;
+        padding: 0rem 1rem;
     }
     
     footer a {
-        border: none;
+        color: white;
+        border-bottom: 1px solid white;
     }
     
     /* ----------- Icon styles ----------- */
@@ -146,52 +175,64 @@
     
     /* ----------- Button styles ----------- */
 
-    .big-button {
-        font-size: 4rem;
-        color: #002fff;
+    .big-button a{
+        font-size: 3.5rem;
+        color: #006eff;
         border: 4px solid;
         text-transform: uppercase;
-        letter-spacing: 0.05em;
+        letter-spacing: 0.1em;
         display: inline-block;
         padding: 1rem 2rem;
     }
 
-    .big-button:hover {
-        font-size: 4rem;
-        background-color: #002fff;
-        border: 4px solid #002fff;
-        text-transform: uppercase;
-        letter-spacing: 0.05em;
-        display: inline-block;
-        padding: 1rem 2rem;
-    }
-    
     .big-button a:hover {
+        font-size: 3.5rem;
         color: white;
-    }
-
-    .big-button-white {
-        font-size: 4rem;
-        color: white;
-        border: 4px solid;
+        background-color: #006eff;
+        border: 4px solid #006eff;
         text-transform: uppercase;
         letter-spacing: 0.05em;
         display: inline-block;
         padding: 1rem 2rem;
     }
 
-    .big-button-white:hover {
-        font-size: 4rem;
+
+    .big-button-white a{
+        font-size: 3.5rem;
+        color: white;
+        border: 4px solid;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        display: inline-block;
+        padding: 1rem 2rem;
+    }
+
+    .big-button-white a:hover {
+        color: #006eff;
+        font-size: 3.5rem;
         background-color: white;
         border: 4px solid white;
         text-transform: uppercase;
-        letter-spacing: 0.05em;
+        letter-spacing: 0.1em;
         display: inline-block;
         padding: 1rem 2rem;
     }
-    
-    .big-button-white a:hover {
-        color: #002fff;;
+
+    .small-button {
+        color: #006eff;
+        font-size: 1.5rem;
+        border: 2px solid #006eff;
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        margin: 0rem 0.5em;
     }
-    
-    
+
+    .small-button:hover {
+        color: white;
+        background-color: #006eff;
+        font-size: 1.5rem;
+        border: 2px solid #006eff;
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        margin: 0rem 0.5em;
+    }
