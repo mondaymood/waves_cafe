@@ -8,31 +8,25 @@
         box-sizing: border-box;
     }
     
-    /* ----------- Universal styles ----------- */
-    
-    body {
-        font-family: 'Poppins', sans-serif;
-        color: #006eff;
-    }
-    
-    .padded        {padding: 5%;}
-    .padded-s      {padding: 1rem;}
-    .padded-l      {padding: 10%;}
-    .padded-menu   {padding: 0rem 7rem 10rem 7rem}
-    
-    .bg-blue {
-        background-color: #006eff;
-        color: white;
+    [class*=grid] {
+        margin: 0;
     }
 
-    .bg-blue a{
-        color: #00aeff;
-    }
-
-    .bg-blue a:hover{
-        color:  white;
-    }
+/* ----------- Universal styles ----------- */
     
+    /* --- Padding styles --- */
+
+    .padded         {padding: 5%;}
+    .padded-s       {padding: 1rem;}
+    .padded-l       {padding: 10%;}
+
+    .padded-left    {padding: 0 0 0 2rem;}
+    .padded-right   {padding: 0 2rem 0 0;}
+    .padded-top     {padding: 2rem 0 0 0;}
+    .padded-bottom  {padding: 0 0 2rem 0;}
+
+    /* --- Height styles --- */
+
     .tall-50        {min-height: 50vh;}
     .tall-60        {min-height: 60vh;}
     .tall-70        {min-height: 70vh;}
@@ -40,20 +34,41 @@
     .tall-90        {min-height: 90vh;}
     .tall-100       {min-height: 100vh;}
 
-    [class*=grid] {
-        margin: 0;
+    /* --- Background styles --- */
+
+    .bg-blue {
+        background-color: #006eff;
+        color: white;
     }
+
+    /* --- Image styles --- */
     
-    /* ----------- Typography styles ----------- */
+    .bg-image {
+        background-image: url('/images/waves_cafe_background.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 10rem;
+    }
+
+    .landscape {padding-bottom: 65%;}
+    .portrait {padding-bottom: 125%;}
+    .square {padding-bottom: 100%;}    
+
+/* ----------- Typography styles ----------- */
     
+    body {
+        font-family: 'Poppins', sans-serif;
+        color: #006eff;
+    }
+
     h2, h3, h4, h5, h6 {
         margin-bottom: 1rem;
-        line-height: 1.4;
+        line-height: 1.2;
     }
       
-    h2 {
-        font-size: 2.5rem;
-    }
+    h1 {font-size: 3rem;}
+    h2 {font-size: 2.5rem;}
+    h3 {font-size: 1.5rem;}
     
     p {
         font-weight: 400;
@@ -67,12 +82,13 @@
     }
     
     a {
-        color: #006eff;
+        color: #00aeff;
         text-decoration: none;
     }
     
     a:hover {
-        color: #00aeff;
+        color:rgb(150,150,150);
+        transition: 0.2s;
     }
     
     .text-left      {text-align: left;}
@@ -83,53 +99,82 @@
     .white          {color: white;}
     
     .small-text     {font-size: 1.5rem;}
-    
-    .medium-text    {
-        font-size: 2rem;
-        line-height: 1.5;
-    }
-    .big-text       {
-        font-size: 3.5rem;
-        text-transform: uppercase;
-        font-weight: 400;
-        letter-spacing: 0.05em;
-    }
-    
-    .subtitle       {
-        font-size: 1.2rem;
-        color:rgb(120,120,125);
-    }
-    
-    .quotation-marks {
-        font-size: 6rem;
-        display: inline-block;
-        color:rgb(120,120,125);
-        line-height: 1;
-    }
+    .medium-text    {font-size: 2rem;}
+    .big-text       {font-size: 3.5rem;}
 
     .light-weight   {font-weight: 200;}
     .normal-weight  {font-weight: normal;}
     .bold-weight    {font-weight: 600;}
 
-    /* ----------- Image styles ----------- */
+/* ----------- Icon styles ----------- */
+
+    .fas {
+        display: block;
+        text-align: center;
+        margin-bottom: 2rem;
+        font-size: 3rem;
+    }
+
+    .fa-long-arrow-alt-down{
+        font-size: 5rem;
+        padding-top: 3rem;
+        color: white;
+    }
+
+/* ----------- Header/Footer styles ----------- */
+    
+    .bg-background {
+        background-image: url('images/waves_cafe_background.jpg');
+        background-size: cover;
+        padding: 2% 5%;
+    }
+
+    header h3 {
+        font-size: 5rem;
+        line-height: 1.2;
+        font-weight: 400;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav a {
+        color: #006eff;
+        font-size: 1.2rem;
+        padding: 0rem 0.8rem;
+    }
+
+    nav a:hover {
+        color: #00aeff;
+    }
+
+    nav .button {
+        color: #006eff;
+        border: 2px solid #006eff;
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        margin: 0rem 0.5em;
+    }
+
+    nav .button:hover {
+        background-color: #006eff;
+        border: 2px solid #006eff;
+        color: white;
+        transition: 0.2s;
+    }
+    
+    footer a {
+        color: white;
+        border-bottom: 1px solid white;
+    }
+
+/* ----------- Image styles ----------- */
    
     .bg-ocean {
         background-image: url('images/waves_cafe_ocean.jpg');
-        background-position: 0% 50%;
-        background-size: cover;
-    }
-
-    .bg-light {
-        background-image: url('https://source.unsplash.com/YQD1Xljt4xo');
         background-position: 50% 80%;
         background-size: cover;
         max-width: 100%;
     }    
-
-    .bg-background {
-        background-image: url('images/waves_cafe_background.jpg');
-        background-size: cover;
-    }
 
     .bg-woman      {
         background-image: url('images/waves_cafe_woman.jpg');
@@ -143,6 +188,12 @@
         background-size: cover;
     }
 
+    .bg-drinks     {
+        background-image: url('images/waves_cafe_drinks.jpg');
+        background-position: 50% 50%;
+        background-size: cover;
+    }
+
     .bg-table      {
         background-image: url('images/waves_cafe_table.jpg');
         background-position: 50% 60%;
@@ -150,62 +201,43 @@
     }
 
     .bg-breakfast      {
-        background-image: url('https://source.unsplash.com/TkzdkVn1AyA');
-        background-position: 50% 75%;
+        background-image: url('images/waves_cafe_breakfast.jpg');
+        background-position: 50% 50%;
         background-size: cover;
     }
 
     .bg-lunch      {
-        background-image: url('https://source.unsplash.com/fdlZBWIP0aM');
+        background-image: url('images/waves_cafe_lunch.jpg');
+        background-position: 50% 20%;
+        background-size: cover;
+    }
+
+    .bg-barista      {
+        background-image: url('images/waves_cafe_barista.jpg');
         background-position: 50% 50%;
         background-size: cover;
     }
-    
-    .bg-logo      {
-        background-image: url('images/waves_logo.png');
-        background-position: 50% 60%;
+
+    .bg-cafe      {
+        background-image: url('images/waves_cafe_cafe.jpg');
+        background-position: 50% 50%;
         background-size: cover;
     }
 
     .bg-map {
         background-image: url('images/waves_cafe_map.png');
         background-size: cover;
+        background-position: center;
     }
 
-    .landscape {padding-bottom: 65%;}
-    .portrait {padding-bottom: 125%;}
-    .square {padding-bottom: 100%;}    
-    
-    /* ----------- Header/Footer styles ----------- */
-        
-    header h3 {
-        font-size: 5.5rem;
-        line-height: 1.2;
-        font-weight: 400;
-    }
+    .banner {
+        margin: 5rem -4rem 0rem 0rem;
+        text-align: right;
+     }
 
-    nav a {
-        font-size: 1.5rem;
-        padding: 0rem 1rem;
-    }
-    
-    footer a {
-        color: white;
-        border-bottom: 1px solid white;
-    }
-    
-    /* ----------- Icon styles ----------- */
-    
-    .fas {
-        display: block;
-        text-align: center;
-        margin-bottom: 2rem;
-        font-size: 3rem;
-    }
-    
-    /* ----------- Button styles ----------- */
+/* ----------- Button styles ----------- */
 
-    .big-button a{
+    .big-button a {
         font-size: 3.5rem;
         color: #006eff;
         border: 4px solid;
@@ -221,13 +253,13 @@
         background-color: #006eff;
         border: 4px solid #006eff;
         text-transform: uppercase;
-        letter-spacing: 0.05em;
+        letter-spacing: 0.1em;
         display: inline-block;
         padding: 1rem 2rem;
     }
+ 
 
-
-    .big-button-white a{
+    .big-button-white a {
         font-size: 3.5rem;
         color: white;
         border: 4px solid;
@@ -248,71 +280,48 @@
         padding: 1rem 2rem;
     }
 
-    .small-button {
-        color: #006eff;
-        font-size: 1.5rem;
-        border: 2px solid #006eff;
-        display: inline-block;
-        padding: 0.5rem 1rem;
-        margin: 0rem 0.5em;
-    }
+/* ----------- Form styles ----------- */
 
-    .small-button:hover {
+    form input, form textarea {
+        width: 100%;
+        margin: 0.5rem 0;
+        padding: 0.5rem;
+        border: 2px solid rgb(220, 220, 220);
+        outline: none;
+        font-family: inherit;
+        font-size: 0.9rem;
+  }
+  
+    form input:focus, form textarea:focus {
+        border-color: #00aeff;
+    }
+    
+    form label {
+        margin-top: 1rem;
+        display: block;
         color: white;
+    }
+    
+    form button {
         background-color: #006eff;
-        font-size: 1.5rem;
-        border: 2px solid #006eff;
-        display: inline-block;
-        padding: 0.5rem 1rem;
-        margin: 0rem 0.5em;
+        color: white;
+        border: 2px solid white;
+        padding: 0.5rem 2rem;
+        letter-spacing: 0.2em;
+        margin: 0.5rem 0;
+        font-size: 1rem;
+        margin-top: 1rem;
     }
 
-
- /* ----------- Additional styles ----------- */
-
- .banner {
-    margin: 0rem -4rem 7rem 0rem;
-    text-align: right;
- }
-
- .fa-long-arrow-alt-down{
-     font-size: 5rem;
-     padding-top: 3rem;
-     color: white;
- }
-
-
-form input, form textarea {
-    width: 100%;
-    margin: 0.5rem 0;
-    padding: 0.5rem;
-    border: 2px solid rgb(220, 220, 220);
-    outline: none;
-    font-family: inherit;
-    font-size: 0.9rem;
-  }
-  
-  form input:focus, form textarea:focus {
-    border-color: teal;
-  }
-  
-  textarea {
-    min-height: 10rem;
-  }
-  
-  form label {
-    margin-top: 1rem;
-    display: block;
-    color: #6C7A89;
-    font-weight: bold;
-  }
-  
-  form button {
-    background-color: #6C7A89;
-    color: white;
-    border: none;
-    padding: 0.5rem 2rem;
-    letterspacing: 0.1em;
-    margin: 0.5rem 0;
-  }
+    form button:hover {
+        background-color: white;
+        color: #006eff;
+        border: 2px solid white;
+        padding: 0.5rem 2rem;
+        letter-spacing: 0.2em;
+        margin: 0.5rem 0;
+        transition: 0.2s;
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
   
