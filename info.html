@@ -8,6 +8,9 @@
     
     <title>Waves Café</title>
 
+     <!---- Viewport meta for responsiveness ---->
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
     <!---- This is the grid stylesheet ---->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css" />
 
@@ -29,26 +32,33 @@
 <body>
 
     <!-------------- This is the header -------------->
-    <header class="bg-background white padded grid text-center tall-50">
+    <header class="white grid text-center">
         <div class="header-nav col-12-top grid">
-            <div class="col-4_xs-12-middle text-left">
+            <div class="col-4_md-12-middle text-left md-text-center padded sm-padded-l">
                <a href="/index.html" class="logo">
                 <img src="images/waves_logo.png">
                </a>
             </div>
-            <nav class="col-8_xs-12-middle text-right">
+            <nav class="col-8_md-12-middle text-right md-text-center padded md-padded-t-0">
              <a href="/index.html">Home</a>
              <a href="/menu.html">Menu</a>
              <a href="/info.html">Info</a>
-             <a href="#reservation" class="button">Make a reservation</a>
+             <a href="/info.html#reservation" class="button">Make a reservation</a>
           </nav>
         </div>
- 
-         <div class="col-12-bottom">
-         <h3 class="bold-weight editable">About us</header>
+
+     </header>
+     
+    <!-------------- This is a banner -------------->
+    <section class="bg-background white grid text-center tall-80 md-tall-50">
+        <div class="col-12-middle padded-top">
+            <h1 class="big-text bold-weight editable">About us</h3>
+            <a href="#menu"><i class="fas fa-long-arrow-alt-down"></i></a> 
+        </div>
+    </section>
 
     <!-------------- This is the map section -------------->
-    <section class="grid padded-top bg-blue">
+    <section class="grid">
         <div class="col-12 bg-map tall-50">
             <!---- Background image bed ---->
         </div>
@@ -56,7 +66,7 @@
 
     <!-------------- This is the info section -------------->
     <section class="grid">
-        <div class="padded col-6-middle_xs-12">
+        <div class="padded col-6-middle_xs-12 sm-padded-l">
             <h2 class="editable">
                 Location
             </h2>
@@ -67,15 +77,16 @@
                 Necessitatibus beatae possimus provident maiores quis repellat nihil omnis ratione, adipisci <a target="_blank" rel="noopener" href="https://www.google.com">reiciendis illum totam</a> ab eum neque ipsam facere nostrum eligendi quaerat.
             </p>
         </div>
-        <div class="bg-cafe col-6_xs-12 tall-70">
+        <div class="bg-cafe col-6_xs-12 tall-70 md-tall-60">
             <!---- Background image bed ---->
         </div>
     </section>
-    <section class="grid">
-        <div class="bg-barista col-6_xs-12 tall-70">
+
+    <section class="grid sm-padded-t">
+        <div class="bg-barista col-6_xs-12 tall-70 md-tall-60">
             <!---- Background image bed ---->
         </div>
-        <div class="padded col-6-middle_xs-12">
+        <div class="padded col-6-middle_xs-12 sm-padded-l">
             <h2 class="editable">
                 Opening hours
             </h2>
@@ -91,7 +102,7 @@
     <!-------------- This is the contact section -------------->
     
     <section class="grid bg-blue" id="reservation">
-        <div class="padded col-6-middle_xs-12">
+        <div class="padded col-6-middle_xs-12 sm-padded-l">
             <h2 class="editable">
                 Contact us
             </h2>
@@ -102,7 +113,7 @@
                 Necessitatibus beatae possimus provident maiores quis repellat nihil omnis ratione, adipisci <a target="_blank" rel="noopener" href="https://www.google.com">reiciendis illum totam</a> ab eum neque ipsam facere nostrum eligendi quaerat.
             </p>
         </div>
-        <div class="padded col-6_xs-12">
+        <div class="padded col-6_xs-12 sm-padded-l">
             <form   action="https://formspree.io/f/mqkwbvve"
             method="POST">
               <label for="_name">Your name</label>
@@ -121,14 +132,12 @@
     </section>
 
     <!-------------- This is the footer -------------->
-    <footer class="padded white grid bg-ocean">
-       
-        
-        <div class="col-4-bottom_xs-12 padded-right">
+    <footer class="padded white grid bg-ocean sm-padded-l">
+        <div class="col-4_md-6_xs-12-bottom">
             <h2>Let's connect</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima incidunt quibusdam rem. Adipisci rerum aliquid non quos quisquam, placeat fugiat laudantium id amet nemo exercitationem veritatis voluptatum dicta at nobis!</p>
         </div>
-        <div class="col-4-bottom_xs-12">
+        <div class="col-4_md-6_xs-12-bottom">
             <p><strong>Call:</strong> <a href="tel:#">04555 5555</a></p>
             <p><strong>Email:</strong> <a href="mailto:#">hello@wavescafe.co</a></p>
             <p><strong>Store:</strong> 55 Main St, Chicago</p>

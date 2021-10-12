@@ -8,6 +8,9 @@
     
     <title>Waves Café</title>
 
+     <!---- Viewport meta for responsiveness ---->
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!---- This is the grid stylesheet ---->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css" />
 
@@ -27,77 +30,79 @@
 <!---- This is the body (page content) ---->
 
 <body>
+
     <!-------------- This is the header -------------->
-    <header class="bg-background white padded grid text-center tall-100">
+    <header class="white grid text-center">
         <div class="header-nav col-12-top grid">
-            <div class="col-4_xs-12-middle text-left">
+            <div class="col-4_md-12-middle text-left md-text-center padded sm-padded-l">
                <a href="/index.html" class="logo">
                 <img src="images/waves_logo.png">
                </a>
             </div>
-            <nav class="col-8_xs-12-middle text-right">
+            <nav class="col-8_md-12-middle text-right md-text-center padded md-padded-t-0">
              <a href="/index.html">Home</a>
              <a href="/menu.html">Menu</a>
              <a href="/info.html">Info</a>
              <a href="/info.html#reservation" class="button">Make a reservation</a>
           </nav>
         </div>
- 
-        <div class="col-12-bottom arrow">
-            <h3 class="bold-weight editable">Bringing the beach<br>downtown.</h3>
-            <a href="#menu"><i class="fas fa-long-arrow-alt-down"></i></a> 
-        </div>
 
      </header>
-
+     
     <!-------------- This is a banner -------------->
-    <section class="padded text-center" id="menu">
+    <section class="bg-background white grid text-center tall-80 md-tall-50">
+        <div class="col-12-middle padded-top">
+            <h1 class="big-text bold-weight editable">Bringing the beach<br>downtown.</h3>
+            <a href="#menu"><i class="fas fa-long-arrow-alt-down"></i></a> 
+        </div>
+    </section>
+ 
+    <!-------------- This is a banner -------------->
+    <section class="padded text-center sm-padded-l" id="menu">
         <div>
             <div class="big-button"><a href="/menu.html">Menu</a></div>
         </div>
     </section>
-
+ 
     <!-------------- This is a gallery -------------->
-    <section class="grid tall-60 ">
+    <section class="grid tall-60 sm-tall-80">
         <div class="bg-woman col-4_xs-12">   
             <!---- Background image bed ---->
         </div>  
-        <div class="bg-coffee col-4_xs-12">   
+        <div class="bg-coffee col-4_xs-12 sm-margin-t">   
             <!---- Background image bed ---->
         </div>  
-        <div class="bg-table col-4_xs-12">   
+        <div class="bg-table col-4_xs-12 sm-margin-t">   
             <!---- Background image bed ---->
         </div>  
     </section>
 
     <!-------------- This is the story -------------->
-    <section class="banner">
+    <section class="banner hide-md">
         <img src="images/waves_cafe_banner.png">
     </section>   
     
-    <section class="padded text-center tall-40 grid-center">
-        <div class="col-6-middle">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam doloremque explicabo cumque ipsam aliquid sint quaerat numquam laboriosam laborum. Necessitatibus, dolorem ipsum? Possimus distinctio minus, impedit itaque nulla atque consectetur.</p>
+    <section class="padded sm-padded-l text-center tall-40 grid-center">
+        <div class="col-6_md-8_sm-12">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam doloremque explicabo cumque ipsam aliquid sint quaerat ijudlkajdlajnumquam laboriosam laborum. Necessitatibus, dolorem ipsum? Possimus distinctio minus, impedit itaque nulla atque consectetur.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam doloremque explicabo cumque ipsam aliquid sint quaerat numquam laboriosam laborum. Necessitatibus, dolorem ipsum? Possimus distinctio minus, impedit itaque nulla atque consectetur.</p>
         </div>
     </section> 
 
     <!-------------- This is a banner -------------->
-    <section class="bg-blue padded text-center">
+    <section class="bg-blue padded text-center sm-padded-l">
         <div>
-            <div class="big-button-white"><a href="/menu.html">Make a reservation</a></div>
+            <div class="big-button-white"><a href="/info.html#reservation">Make a reservation</a></div>
         </div>
     </section>
 
     <!-------------- This is the footer -------------->
     <footer class="padded white grid bg-ocean">
-       
-        
-        <div class="col-4-bottom_xs-12 padded-right">
+        <div class="col-4_md-6_xs-12-bottom padded">
             <h2>Let's connect</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima incidunt quibusdam rem. Adipisci rerum aliquid non quos quisquam, placeat fugiat laudantium id amet nemo exercitationem veritatis voluptatum dicta at nobis!</p>
         </div>
-        <div class="col-4-bottom_xs-12">
+        <div class="col-4_md-6_xs-12-bottom padded">
             <p><strong>Call:</strong> <a href="tel:#">04555 5555</a></p>
             <p><strong>Email:</strong> <a href="mailto:#">hello@wavescafe.co</a></p>
             <p><strong>Store:</strong> 55 Main St, Chicago</p>
